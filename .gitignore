@@ -1,0 +1,6 @@
+# Don't store config data with git
+config/*
+!config/.gitkeep
+# Don't store logs with git
+logs/*
+!logs/.gitkeep

@@ -1,0 +1,3 @@
+[submodule "docker-unifi-controller"]
+	path = docker-unifi-controller
+	url = https://github.com/linuxserver/docker-unifi-controller
