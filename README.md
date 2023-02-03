@@ -48,13 +48,13 @@ Checkout the [docker-compose.yaml](`./docker-compose.yaml`) to make sure all of 
 
 * container`8443` mapped to host port `443`.
 * all "optional" ports are disabled
-* container directory `config/log/` is mapped to host directory`logs/` - [.gitignore](./.gitignore) is setup to ignore the contents of `config/` and `logs/`, apart from a placeholder file `[.gitkeep](./config/.gitkeep)`
+* container directory `config/log/` is mapped to host directory`logs/` - `[.gitignore](.gitignore)` is setup to ignore the contents of `config/` and `logs/`, apart from a placeholder file `[.gitkeep](config/.gitkeep)`
 * timezone set to `America/Denver`
 
 
 ## Go Container Go!
 
-After configuring the `[docker-compose.yaml](./docker-compose.yaml)` file with the appropriate mappings. Run the following command:
+After configuring the `[docker-compose.yaml](docker-compose.yaml)` file with the appropriate mappings. Run the following command:
 ```sh
 docker compose up -d
 ```
