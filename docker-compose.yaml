@@ -4,6 +4,7 @@ services:
   unifi-controller:
     image: lscr.io/linuxserver/unifi-controller:latest
     container_name: unifi-controller
+    hostname: unipi
     environment:
       - PUID=1000
       - PGID=1000
@@ -29,7 +30,7 @@ services:
       # Unifi - (Optional) Unifi guest portal HTTP redirect port
       # - 8880:8880
       # Unifi - (Optional) For mobile throughput test
-      # - 6789:6789
+      - 6789:6789
       # Unifi - (Optional) Remote syslog port
       # - 5514:5514/udp
     restart: unless-stopped
